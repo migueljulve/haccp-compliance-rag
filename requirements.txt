@@ -1,0 +1,31 @@
+
+
+# Data handling
+pandas>=2.2
+python-dotenv>=1.0
+
+# Embeddings & retrieval
+sentence-transformers>=3.0
+qdrant-client>=1.9
+rank-bm25>=0.2.2
+
+# LLM
+openai>=1.0
+
+# Document parsing
+pypdf>=5.0
+requests>=2.32
+beautifulsoup4>=4.12
+
+# Interface
+streamlit>=1.36
+
+# Monitoring
+psycopg2-binary>=2.9
+
+# Ingestion pipeline (optional, for 2pts vs 1pt)
+dlt>=1.0
+
+# Eval / notebooks
+jupyter>=1.0
+tqdm>=4.66

@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+.DS_Store
+.claude/
+CLAUDE.md
+.ipynb_checkpoints/
+qdrant_storage/
+*.log
