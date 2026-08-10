@@ -29,3 +29,6 @@ dlt>=1.0
 # Eval / notebooks
 jupyter>=1.0
 tqdm>=4.66
+
+#starlette is a framework web together with uvicorn where strealit runs
+starlette<1.0
