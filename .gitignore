@@ -3,9 +3,9 @@ __pycache__/
 .venv/
 venv/
 .env
-data/raw/*
+
 data/processed/*
-!data/raw/.gitkeep
+
 !data/processed/.gitkeep
 .DS_Store
 .claude/
