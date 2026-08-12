@@ -1,0 +1,9 @@
+{
+  "name": "haccp-compliance-rag",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "forwardPorts": [8501, 6333, 3000],
+  "postCreateCommand": "pip install uv && uv pip install --system -r requirements.txt"
+}
