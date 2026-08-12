@@ -1,0 +1,255 @@
+<?xml version="1.0"?>
+<DIV5 N="120" TYPE="PART" VOLUME="2" hierarchy_metadata="{&amp;quot;path&amp;quot;:&amp;quot;/on/_SUBSTITUTE_DATE_/title-21/part-120&amp;quot;,&amp;quot;citation&amp;quot;:&amp;quot;21 CFR Part 120&amp;quot;}">
+<HEAD>PART 120&#x2014;HAZARD ANALYSIS AND CRITICAL CONTROL POINT (HACCP) SYSTEMS
+</HEAD>
+<AUTH>
+<HED>Authority:</HED><PSPACE>21 U.S.C. 321, 342, 343, 346, 348, 371, 374, 379e, 381, 393; 42 U.S.C. 241, 242l, 264.
+</PSPACE></AUTH>
+<SOURCE>
+<HED>Source:</HED><PSPACE>66 FR 6197, Jan. 19, 2001, unless otherwise noted.
+</PSPACE></SOURCE>
+<DIV6 N="A" TYPE="SUBPART" VOLUME="2" hierarchy_metadata="{&amp;quot;path&amp;quot;:&amp;quot;/on/_SUBSTITUTE_DATE_/title-21/part-120/subpart-A&amp;quot;,&amp;quot;citation&amp;quot;:&amp;quot;21 CFR Part 120 Subpart A&amp;quot;}">
+<HEAD>Subpart A&#x2014;General Provisions</HEAD>
+<DIV8 N="120.1" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-21/section-120.1&quot;,&quot;citation&quot;:&quot;21 CFR 120.1&quot;}">
+<HEAD>&#xA7; 120.1 Applicability.</HEAD>
+<P>(a) Any juice sold as such or used as an ingredient in beverages shall be processed in accordance with the requirements of this part. Juice means the aqueous liquid expressed or extracted from one or more fruits or vegetables, purees of the edible portions of one or more fruits or vegetables, or any concentrates of such liquid or puree. The requirements of this part shall apply to any juice regardless of whether the juice, or any of its ingredients, is or has been shipped in interstate commerce (as defined in section 201(b) of the Federal Food, Drug, and Cosmetic Act, 21 U.S.C. 321(b)). Raw agricultural ingredients of juice are not subject to the requirements of this part. Processors should apply existing agency guidance to minimize microbial food safety hazards for fresh fruits and vegetables in handling raw agricultural products.</P>
+<P>(b) The regulations in this part shall be effective January 22, 2002. However, by its terms, this part is not binding on small and very small businesses until the dates listed in paragraphs (b)(1) and (b)(2) of this section.</P>
+<P>(1) For small businesses employing fewer than 500 persons the regulations in this part are binding on January 21, 2003.</P>
+<P>(2) For very small businesses that have either total annual sales of less than $500,000, or if their total annual sales are greater than $500,000 but their total food sales are less than $50,000; or the person claiming this exemption employed fewer than an average of 100 full-time equivalent employees and fewer than 100,000 units of juice were sold in the United States, the regulations are binding on January 20, 2004.</P>
+</DIV8>
+
+<DIV8 N="120.3" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-21/section-120.3&quot;,&quot;citation&quot;:&quot;21 CFR 120.3&quot;}">
+<HEAD>&#xA7; 120.3 Definitions.</HEAD>
+<P>The definitions of terms in section 201 of the Federal Food, Drug, and Cosmetic Act, &#xA7; 101.9(j)(18)(vi) of this chapter, and parts 110 and 117 of this chapter are applicable to such terms when used in this part, except that the definitions and terms in parts 110 and 117 do not govern such terms where such terms are redefined in this part and except that the terms facility, hazard, and manufacturing/processing in parts 110 and 117 do not govern such terms where used in this part. The following definitions shall also apply:</P>
+<P>(a) <I>Cleaned</I> means washed with water of adequate sanitary quality.</P>
+<P>(b) <I>Control</I> means to prevent, eliminate, or reduce.</P>
+<P>(c) <I>Control measure</I> means any action or activity to prevent, reduce to acceptable levels, or eliminate a hazard.</P>
+<P>(d) <I>Critical control point</I> means a point, step, or procedure in a food process at which a control measure can be applied and at which control is essential to reduce an identified food hazard to an acceptable level.</P>
+<P>(e) <I>Critical limit</I> means the maximum or minimum value to which a physical, biological, or chemical parameter must be controlled at a critical control point to prevent, eliminate, or reduce to an acceptable level the occurrence of the identified food hazard.</P>
+<P>(f) <I>Culled</I> means separation of damaged fruit from undamaged fruit. For processors of citrus juices using treatments to fruit surfaces to comply with &#xA7; 120.24, <I>culled</I> means undamaged, tree-picked fruit that is U.S. Department of Agriculture choice or higher quality.</P>
+<P>(g) <I>Food hazard</I> means any biological, chemical, or physical agent that is reasonably likely to cause illness or injury in the absence of its control.</P>
+<P>(h) <I>Importer</I> means either the U.S. owner or consignee at the time of entry of a food product into the United States, or the U.S. agent or representative of the foreign owner or consignee at the time of entry into the United States. The importer is responsible for ensuring that goods being offered for entry into the United States are in compliance with all applicable laws. For the purposes of this definition, the importer is ordinarily not the custom house broker, the freight forwarder, the carrier, or the steamship representative.</P>
+<P>(i) <I>Monitor</I> means to conduct a planned sequence of observations or measurements to assess whether a process, point, or procedure is under control and to produce an accurate record for use in verification.</P>
+<P>(j)(1) <I>Processing</I> means activities that are directly related to the production of juice products.</P>
+<P>(2) For purposes of this part, processing does not include:</P>
+<P>(i) Harvesting, picking, or transporting raw agricultural ingredients of juice products, without otherwise engaging in processing; and</P>
+<P>(ii) The operation of a retail establishment.</P>
+<P>(k) <I>Processor</I> means any person engaged in commercial, custom, or institutional processing of juice products, either in the United States or in a foreign country, including any person engaged in the processing of juice products that are intended for use in market or consumer tests.</P>
+<P>(l) <I>Retail establishment</I> is an operation that provides juice directly to the consumers and does not include an establishment that sells or distributes juice to other business entities as well as directly to consumers. &#x201C;Provides&#x201D; includes storing, preparing, packaging, serving, and vending.</P>
+<P>(m) <I>Shall</I> is used to state mandatory requirements.</P>
+<P>(n) <I>Shelf-stable product</I> means a product that is hermetically sealed and, when stored at room temperature, should not demonstrate any microbial growth.</P>
+<P>(o) <I>Should</I> is used to state recommended or advisory procedures or to identify recommended equipment.</P>
+<P>(p) <I>Validation</I> means that element of verification focused on collecting and evaluating scientific and technical information to determine whether the HACCP plan, when properly implemented, will effectively control the identified food hazards.</P>
+<P>(q) <I>Verification</I> means those activities, other than monitoring, that establish the validity of the HACCP plan and that the system is operating according to the plan.</P>
+<CITA TYPE="N">[66 FR 6197, Jan. 19, 2001, as amended at 80 FR 56167, Sept. 17, 2015]
+</CITA>
+</DIV8>
+
+<DIV8 N="120.5" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-21/section-120.5&quot;,&quot;citation&quot;:&quot;21 CFR 120.5&quot;}">
+<HEAD>&#xA7; 120.5 Current good manufacturing practice.</HEAD>
+<P>Except as provided by &#xA7; 117.5(c), parts 110 and 117 of this chapter apply in determining whether the facilities, methods, practices, and controls used to process juice are safe, and whether the food has been processed under sanitary conditions.</P>
+<CITA TYPE="N">[80 FR 56167, Sept. 17, 2015]
+</CITA>
+</DIV8>
+
+<DIV8 N="120.6" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-21/section-120.6&quot;,&quot;citation&quot;:&quot;21 CFR 120.6&quot;}">
+<HEAD>&#xA7; 120.6 Sanitation standard operating procedures.</HEAD>
+<P>(a) <I>Sanitation controls.</I> Each processor shall have and implement a sanitation standard operating procedure (SSOP) that addresses sanitation conditions and practices before, during, and after processing. The SSOP shall address:</P>
+<P>(1) Safety of the water that comes into contact with food or food contact surfaces or that is used in the manufacture of ice;</P>
+<P>(2) Condition and cleanliness of food contact surfaces, including utensils, gloves, and outer garments;</P>
+<P>(3) Prevention of cross contamination from insanitary objects to food, food packaging material, and other food contact surfaces, including utensils, gloves, and outer garments, and from raw product to processed product;</P>
+<P>(4) Maintenance of hand washing, hand sanitizing, and toilet facilities;</P>
+<P>(5) Protection of food, food packaging material, and food contact surfaces from adulteration with lubricants, fuel, pesticides, cleaning compounds, sanitizing agents, condensate, and other chemical, physical, and biological contaminants;</P>
+<P>(6) Proper labeling, storage, and use of toxic compounds;</P>
+<P>(7) Control of employee health conditions that could result in the microbiological contamination of food, food packaging materials, and food contact surfaces; and</P>
+<P>(8) Exclusion of pests from the food plant.</P>
+<P>(b) <I>Monitoring.</I> The processor shall monitor the conditions and practices during processing with sufficient frequency to ensure, at a minimum, conformance with those conditions and practices specified in part 110 of this chapter and in subpart B of part 117 of this chapter that are appropriate both to the plant and to the food being processed. Each processor shall correct, in a timely manner, those conditions and practices that are not met.</P>
+<P>(c) <I>Records.</I> Each processor shall maintain SSOP records that, at a minimum, document the monitoring and corrections prescribed by paragraph (b) of this section. These records are subject to the recordkeeping requirements of &#xA7; 120.12.</P>
+<P>(d) <I>Relationship to Hazard Analysis and Critical Control Point (HACCP) plan.</I> Sanitation standard operating procedure controls may be included in the HACCP plan required under &#xA7; 120.8(b). However, to the extent that they are implemented in accordance with this section, they need not be included in the HACCP plan.</P>
+<CITA TYPE="N">[66 FR 6197, Jan. 19, 2001, as amended at 80 FR 56167, Sept. 17, 2015]
+</CITA>
+</DIV8>
+
+<DIV8 N="120.7" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-21/section-120.7&quot;,&quot;citation&quot;:&quot;21 CFR 120.7&quot;}">
+<HEAD>&#xA7; 120.7 Hazard analysis.</HEAD>
+<P>(a) Each processor shall develop, or have developed for it, a written hazard analysis to determine whether there are food hazards that are reasonably likely to occur for each type of juice processed by that processor and to identify control measures that the processor can apply to control those hazards. The written hazard analysis shall consist of at least the following:</P>
+<P>(1) Identification of food hazards;</P>
+<P>(2) An evaluation of each food hazard identified to determine if the hazard is reasonably likely to occur and thus, constitutes a food hazard that must be addressed in the HACCP plan. A food hazard that is reasonably likely to occur is one for which a prudent processor would establish controls because experience, illness data, scientific reports, or other information provide a basis to conclude that there is a reasonable possibility that, in the absence of those controls, the food hazard will occur in the particular type of product being processed. This evaluation shall include an assessment of the severity of the illness or injury if the food hazard occurs;</P>
+<P>(3) Identification of the control measures that the processor can apply to control the food hazards identified as reasonably likely to occur in paragraph (a)(2) of this section;</P>
+<P>(4) Review of the current process to determine whether modifications are necessary; and</P>
+<P>(5) Identification of critical control points.</P>
+<P>(b) The hazard analysis shall include food hazards that can be introduced both within and outside the processing plant environment, including food hazards that can occur before, during, and after harvest. The hazard analysis shall be developed by an individual or individuals who have been trained in accordance with &#xA7; 120.13 and shall be subject to the recordkeeping requirements of &#xA7; 120.12.</P>
+<P>(c) In evaluating what food hazards are reasonably likely to occur, consideration should be given, at a minimum, to the following:</P>
+<P>(1) Microbiological contamination;</P>
+<P>(2) Parasites;</P>
+<P>(3) Chemical contamination;</P>
+<P>(4) Unlawful pesticides residues;</P>
+<P>(5) Decomposition in food where a food hazard has been associated with decomposition;</P>
+<P>(6) Natural toxins;</P>
+<P>(7) Unapproved use of food or color additives;</P>
+<P>(8) Presence of undeclared ingredients that may be allergens; and</P>
+<P>(9) Physical hazards.</P>
+<P>(d) Processors should evaluate product ingredients, processing procedures, packaging, storage, and intended use; facility and equipment function and design; and plant sanitation, including employee hygiene, to determine the potential effect of each on the safety of the finished food for the intended consumer.</P>
+<P>(e) HACCP plans for juice need not address the food hazards associated with microorganisms and microbial toxins that are controlled by the requirements of part 113 or part 114 of this chapter. A HACCP plan for such juice shall address any other food hazards that are reasonably likely to occur.</P>
+</DIV8>
+
+<DIV8 N="120.8" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-21/section-120.8&quot;,&quot;citation&quot;:&quot;21 CFR 120.8&quot;}">
+<HEAD>&#xA7; 120.8 Hazard Analysis and Critical Control Point (HACCP) plan.</HEAD>
+<P>(a) <I>HACCP plan.</I> Each processor shall have and implement a written HACCP plan whenever a hazard analysis reveals one or more food hazards that are reasonably likely to occur during processing, as described in &#xA7; 120.7. The HACCP plan shall be developed by an individual or individuals who have been trained in accordance with &#xA7; 120.13 and shall be subject to the recordkeeping requirements of &#xA7; 120.12. A HACCP plan shall be specific to:</P>
+<P>(1) Each location where juice is processed by that processor; and</P>
+<P>(2) Each type of juice processed by the processor. The plan may group types of juice products together, or group types of production methods together, if the food hazards, critical control points, critical limits, and procedures required to be identified and performed by paragraph (b) of this section are essentially identical, provided that any required features of the plan that are unique to a specific product or method are clearly delineated in the plan and are observed in practice.</P>
+<P>(b) <I>The contents of the HACCP plan.</I> The HACCP plan shall, at a minimum:</P>
+<P>(1) List all food hazards that are reasonably likely to occur as identified in accordance with &#xA7; 120.7, and that thus must be controlled for each type of product;</P>
+<P>(2) List the critical control points for each of the identified food hazards that is reasonably likely to occur, including as appropriate:</P>
+<P>(i) Critical control points designed to control food hazards that are reasonably likely to occur and could be introduced inside the processing plant environment; and</P>
+<P>(ii) Critical control points designed to control food hazards introduced outside the processing plant environment, including food hazards that occur before, during, and after harvest;</P>
+<P>(3) List the critical limits that shall be met at each of the critical control points;</P>
+<P>(4) List the procedures, and the frequency with which they are to be performed, that will be used to monitor each of the critical control points to ensure compliance with the critical limits;</P>
+<P>(5) Include any corrective action plans that have been developed in accordance with &#xA7; 120.10(a), and that are to be followed in response to deviations from critical limits at critical control points;</P>
+<P>(6) List the validation and verification procedures, and the frequency with which they are to be performed, that the processor will use in accordance with &#xA7; 120.11; and</P>
+<P>(7) Provide for a recordkeeping system that documents the monitoring of the critical control points in accordance with &#xA7; 120.12. The records shall contain the actual values and observations obtained during monitoring.</P>
+<P>(c) <I>Sanitation.</I> Sanitation controls may be included in the HACCP plan. However, to the extent that they are monitored in accordance with &#xA7; 120.6, they are not required to be included in the HACCP plan.</P>
+</DIV8>
+
+<DIV8 N="120.9" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-21/section-120.9&quot;,&quot;citation&quot;:&quot;21 CFR 120.9&quot;}">
+<HEAD>&#xA7; 120.9 Legal basis.</HEAD>
+<P>Failure of a processor to have and to implement a Hazard Analysis and Critical Control Point (HACCP) system that complies with &#xA7;&#xA7; 120.6, 120.7, and 120.8, or otherwise to operate in accordance with the requirements of this part, shall render the juice products of that processor adulterated under section 402(a)(4) of the Federal Food, Drug, and Cosmetic Act. Whether a processor's actions are consistent with ensuring the safety of juice will be determined through an evaluation of the processor's overall implementation of its HACCP system.</P>
+</DIV8>
+
+<DIV8 N="120.10" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-21/section-120.10&quot;,&quot;citation&quot;:&quot;21 CFR 120.10&quot;}">
+<HEAD>&#xA7; 120.10 Corrective actions.</HEAD>
+<P>Whenever a deviation from a critical limit occurs, a processor shall take corrective action by following the procedures set forth in paragraph (a) or paragraph (b) of this section.</P>
+<P>(a) Processors may develop written corrective action plans, which become part of their HACCP plans in accordance with &#xA7; 120.8(b)(5), by which processors predetermine the corrective actions that they will take whenever there is a deviation from a critical limit. A corrective action plan that is appropriate for a particular deviation is one that describes the steps to be taken and assigns responsibility for taking those steps, to ensure that:</P>
+<P>(1) No product enters commerce that is either injurious to health or is otherwise adulterated as a result of the deviation; and</P>
+<P>(2) The cause of the deviation is corrected.</P>
+<P>(b) When a deviation from a critical limit occurs, and the processor does not have a corrective action plan that is appropriate for that deviation, the processor shall:</P>
+<P>(1) Segregate and hold the affected product, at least until the requirements of paragraphs (b)(2) and (b)(3) of this section are met;</P>
+<P>(2) Perform or obtain a review to determine the acceptability of the affected product for distribution. The review shall be performed by an individual or individuals who have adequate training or experience to perform such review;</P>
+<P>(3) Take corrective action, when necessary, with respect to the affected product to ensure that no product enters commerce that is either injurious to health or is otherwise adulterated as a result of the deviation;</P>
+<P>(4) Take corrective action, when necessary, to correct the cause of the deviation; and</P>
+<P>(5) Perform or obtain timely verification in accordance with &#xA7; 120.11, by an individual or individuals who have been trained in accordance with &#xA7; 120.13, to determine whether modification of the HACCP plan is required to reduce the risk of recurrence of the deviation, and to modify the HACCP plan as necessary.</P>
+<P>(c) All corrective actions taken in accordance with this section shall be fully documented in records that are subject to verification in accordance with &#xA7; 120.11(a)(1)(iv)(B) and the recordkeeping requirements of &#xA7; 120.12.</P>
+</DIV8>
+
+<DIV8 N="120.11" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-21/section-120.11&quot;,&quot;citation&quot;:&quot;21 CFR 120.11&quot;}">
+<HEAD>&#xA7; 120.11 Verification and validation.</HEAD>
+<P>(a) <I>Verification.</I> Each processor shall verify that the Hazard Analysis and Critical Control Point (HACCP) system is being implemented according to design.</P>
+<P>(1) Verification activities shall include:</P>
+<P>(i) A review of any consumer complaints that have been received by the processor to determine whether such complaints relate to the performance of the HACCP plan or reveal previously unidentified critical control points;</P>
+<P>(ii) The calibration of process monitoring instruments;</P>
+<P>(iii) At the option of the processor, the performance of periodic end-product or in-process testing; except that processors of citrus juice that rely in whole or in part on surface treatment of fruit shall perform end-product testing in accordance with &#xA7; 120.25.</P>
+<P>(iv) A review, including signing and dating, by an individual who has been trained in accordance with &#xA7; 120.13, of the records that document:</P>
+<P>(A) The monitoring of critical control points. The purpose of this review shall be, at a minimum, to ensure that the records are complete and to verify that the records document values that are within the critical limits. This review shall occur within 1 week (7 days) of the day that the records are made;</P>
+<P>(B) The taking of corrective actions. The purpose of this review shall be, at a minimum, to ensure that the records are complete and to verify that appropriate corrective actions were taken in accordance with &#xA7; 120.10. This review shall occur within 1 week (7 days) of the day that the records are made; and</P>
+<P>(C) The calibrating of any process monitoring instruments used at critical control points and the performance of any periodic end-product or in-process testing that is part of the processor's verification activities. The purpose of these reviews shall be, at a minimum, to ensure that the records are complete and that these activities occurred in accordance with the processor's written procedures. These reviews shall occur within a reasonable time after the records are made; and</P>
+<P>(v) The following of procedures in &#xA7; 120.10 whenever any verification procedure, including the review of consumer complaints, establishes the need to take a corrective action; and</P>
+<P>(vi) Additional process verification if required by &#xA7; 120.25.</P>
+<P>(2) Records that document the calibration of process monitoring instruments, in accordance with paragraph (a)(1)(iv)(B) of this section, and the performance of any periodic end-product and in-process testing, in accordance with paragraph (a)(1)(iv)(C) of this section, are subject to the recordkeeping requirements of &#xA7; 120.12.</P>
+<P>(b) <I>Validation of the HACCP plan.</I> Each processor shall validate that the HACCP plan is adequate to control food hazards that are reasonably likely to occur; this validation shall occur at least once within 12 months after implementation and at least annually thereafter or whenever any changes in the process occur that could affect the hazard analysis or alter the HACCP plan in any way. Such changes may include changes in the following: Raw materials or source of raw materials; product formulation; processing methods or systems, including computers and their software; packaging; finished product distribution systems; or the intended use or consumers of the finished product. The validation shall be performed by an individual or individuals who have been trained in accordance with &#xA7; 120.13 and shall be subject to the recordkeeping requirements of &#xA7; 120.12. The HACCP plan shall be modified immediately whenever a validation reveals that the plan is no longer adequate to fully meet the requirements of this part.</P>
+<P>(c) <I>Validation of the hazard analysis.</I> Whenever a juice processor has no HACCP plan because a hazard analysis has revealed no food hazards that are reasonably likely to occur, the processor shall reassess the adequacy of that hazard analysis whenever there are any changes in the process that could reasonably affect whether a food hazard exists. Such changes may include changes in the following: Raw materials or source of raw materials; product formulation; processing methods or systems, including computers and their software; packaging; finished product distribution systems; or the intended use or intended consumers of the finished product. The validation of the hazard analysis shall be performed by an individual or individuals who have been trained in accordance with &#xA7; 120.13, and, records documenting the validation shall be subject to the recordkeeping requirements of &#xA7; 120.12.</P>
+</DIV8>
+
+<DIV8 N="120.12" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-21/section-120.12&quot;,&quot;citation&quot;:&quot;21 CFR 120.12&quot;}">
+<HEAD>&#xA7; 120.12 Records.</HEAD>
+<P>(a) <I>Required records.</I> Each processor shall maintain the following records documenting the processor's Hazard Analysis and Critical Control Point (HACCP) system:</P>
+<P>(1) Records documenting the implementation of the sanitation standard operating procedures (SSOP's) (see &#xA7; 120.6);</P>
+<P>(2) The written hazard analysis required by &#xA7; 120.7;</P>
+<P>(3) The written HACCP plan required by &#xA7; 120.8;</P>
+<P>(4) Records documenting the ongoing application of the HACCP plan that include:</P>
+<P>(i) Monitoring of critical control points and their critical limits, including the recording of actual times, temperatures, or other measurements, as prescribed in the HACCP plan; and</P>
+<P>(ii) Corrective actions, including all actions taken in response to a deviation; and</P>
+<P>(5) Records documenting verification of the HACCP system and validation of the HACCP plan or hazard analysis, as appropriate.</P>
+<P>(b) <I>General requirements.</I> All records required by this part shall include:</P>
+<P>(1) The name of the processor or importer and the location of the processor or importer, if the processor or importer has more than one location;</P>
+<P>(2) The date and time of the activity that the record reflects, except that records required by paragraphs (a)(2), (a)(3), and (a)(5) of this section need not include the time;</P>
+<P>(3) The signature or initials of the person performing the operation or creating the record; and</P>
+<P>(4) Where appropriate, the identity of the product and the production code, if any. Processing and other information shall be entered on records at the time that it is observed. The records shall contain the actual values and observations obtained during monitoring.</P>
+<P>(c) <I>Documentation.</I> (1) The records in paragraphs (a)(2) and (a)(3) of this section shall be signed and dated by the most responsible individual onsite at the processing facility or by a higher level official of the processor. These signatures shall signify that these records have been accepted by the firm.</P>
+<P>(2) The records in paragraphs (a)(2) and (a)(3) of this section shall be signed and dated:</P>
+<P>(i) Upon initial acceptance;</P>
+<P>(ii) Upon any modification; and</P>
+<P>(iii) Upon verification and validation in accordance with &#xA7; 120.11.</P>
+<P>(d) <I>Record retention.</I> (1) All records required by this part shall be retained at the processing facility or at the importer's place of business in the United States for, in the case of perishable or refrigerated juices, at least 1 year after the date that such products were prepared, and for, in the case of frozen, preserved, or shelf stable products, 2 years or the shelf life of the product, whichever is greater, after the date that the products were prepared.</P>
+<P>(2) Offsite storage of processing records required by paragraphs (a)(1) and (a)(4) of this section is permitted after 6 months following the date that the monitoring occurred, if such records can be retrieved and provided onsite within 24 hours of request for official review. Electronic records are considered to be onsite if they are accessible from an onsite location and comply with paragraph (g) of this section.</P>
+<P>(3) If the processing facility is closed for a prolonged period between seasonal packs, the records may be transferred to some other reasonably accessible location at the end of the seasonal pack but shall be immediately returned to the processing facility for official review upon request.</P>
+<P>(e) <I>Official review.</I> All records required by this part shall be available for review and copying at reasonable times.</P>
+<P>(f) <I>Public disclosure.</I> (1) All records required by this part are not available for public disclosure unless they have been previously disclosed to the public, as defined in &#xA7; 20.81 of this chapter, or unless they relate to a product or ingredient that has been abandoned and no longer represent a trade secret or confidential commercial or financial information as defined in &#xA7; 20.61 of this chapter.</P>
+<P>(2) Records required to be maintained by this part are subject to disclosure to the extent that they are otherwise publicly available, or that disclosure could not reasonably be expected to cause a competitive hardship, such as generic type HACCP plans that reflect standard industry practices.</P>
+<P>(g) <I>Records maintained on computers.</I> The maintenance of computerized records, in accordance with part 11 of this chapter, is acceptable.</P>
+</DIV8>
+
+<DIV8 N="120.13" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-21/section-120.13&quot;,&quot;citation&quot;:&quot;21 CFR 120.13&quot;}">
+<HEAD>&#xA7; 120.13 Training.</HEAD>
+<P>(a) Only an individual who has met the requirements of paragraph (b) of this section shall be responsible for the following functions:</P>
+<P>(1) Developing the hazard analysis, including delineating control measures, as required by &#xA7; 120.7.</P>
+<P>(2) Developing a Hazard Analysis and Critical Control Point (HACCP) plan that is appropriate for a specific processor, in order to meet the requirements of &#xA7; 120.8;</P>
+<P>(3) Verifying and modifying the HACCP plan in accordance with the corrective action procedures specified in &#xA7; 120.10(b)(5) and the validation activities specified in &#xA7;&#xA7; 120.11(b) and (c); and 120.7;</P>
+<P>(4) Performing the record review required by &#xA7; 120.11(a)(1)(iv).</P>
+<P>(b) The individual performing the functions listed in paragraph (a) of this section shall have successfully completed training in the application of HACCP principles to juice processing at least equivalent to that received under standardized curriculum recognized as adequate by the Food and Drug Administration, or shall be otherwise qualified through job experience to perform these functions. Job experience may qualify an individual to perform these functions if such experience has provided knowledge at least equivalent to that provided through the standardized curriculum. The trained individual need not be an employee of the processor.</P>
+</DIV8>
+
+<DIV8 N="120.14" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-21/section-120.14&quot;,&quot;citation&quot;:&quot;21 CFR 120.14&quot;}">
+<HEAD>&#xA7; 120.14 Application of requirements to imported products.</HEAD>
+<P>This section sets forth specific requirements for imported juice.</P>
+<P>(a) <I>Importer requirements.</I> Every importer of juice shall either:</P>
+<P>(1) Obtain the juice from a country that has an active memorandum of understanding (MOU) or similar agreement with the Food and Drug Administration, that covers the food and documents the equivalency or compliance of the inspection system of the foreign country with the U.S. system, accurately reflects the relationship between the signing parties, and is functioning and enforceable in its entirety; or</P>
+<P>(2) Have and implement written procedures for ensuring that the juice that such importer receives for import into the United States was processed in accordance with the requirements of this part. The procedures shall provide, at a minimum:</P>
+<P>(i) Product specifications that are designed to ensure that the juice is not adulterated under section 402 of the Federal Food, Drug, and Cosmetic Act because it may be injurious to health or because it may have been processed under insanitary conditions; and</P>
+<P>(ii) Affirmative steps to ensure that the products being offered for entry were processed under controls that meet the requirements of this part. These steps may include any of the following:</P>
+<P>(A) Obtaining from the foreign processor the Hazard Analysis and Critical Control Point (HACCP) plan and prerequisite program of the standard operating procedure records required by this part that relate to the specific lot of food being offered for import;</P>
+<P>(B) Obtaining either a continuing or lot specific certificate from an appropriate foreign government inspection authority or competent third party certifying that the imported food has been processed in accordance with the requirements of this part;</P>
+<P>(C) Regularly inspecting the foreign processor's facilities to ensure that the imported food is being processed in accordance with the requirements of this part;</P>
+<P>(D) Maintaining on file a copy, in English, of the foreign processor's hazard analysis and HACCP plan, and a written guarantee from the foreign processor that the imported food is processed in accordance with the requirements of this part;</P>
+<P>(E) Periodically testing the imported food, and maintaining on file a copy, in English, of a written guarantee from the foreign processor that the imported food is processed in accordance with the requirements of this part; or</P>
+<P>(F) Other such verification measures as appropriate that provide an equivalent level of assurance of compliance with the requirements of this part.</P>
+<P>(b) <I>Competent third party.</I> An importer may hire a competent third party to assist with or perform any or all of the verification activities specified in paragraph (a)(2) of this section, including writing the importer's verification procedures on the importer's behalf.</P>
+<P>(c) <I>Records.</I> The importer shall maintain records, in English, that document the performance and results of the affirmative steps specified in paragraph (a)(2)(ii) of this section. These records shall be subject to the applicable provisions of &#xA7; 120.12.</P>
+<P>(d) <I>Determination of compliance.</I> The importer shall provide evidence that all juice offered for entry into the United States has been processed under conditions that comply with this part. If assurances do not exist that an imported juice has been processed under conditions that are equivalent to those required of domestic processors under this part, the product will appear to be adulterated and will be denied entry.</P>
+</DIV8>
+
+</DIV6>
+<DIV6 N="B" TYPE="SUBPART" VOLUME="2" hierarchy_metadata="{&amp;quot;path&amp;quot;:&amp;quot;/on/_SUBSTITUTE_DATE_/title-21/part-120/subpart-B&amp;quot;,&amp;quot;citation&amp;quot;:&amp;quot;21 CFR Part 120 Subpart B&amp;quot;}">
+<HEAD>Subpart B&#x2014;Pathogen Reduction</HEAD>
+<DIV8 N="120.20" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-21/section-120.20&quot;,&quot;citation&quot;:&quot;21 CFR 120.20&quot;}">
+<HEAD>&#xA7; 120.20 General.</HEAD>
+<P>This subpart augments subpart A of this part by setting forth specific requirements for process controls.</P>
+</DIV8>
+
+<DIV8 N="120.24" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-21/section-120.24&quot;,&quot;citation&quot;:&quot;21 CFR 120.24&quot;}">
+<HEAD>&#xA7; 120.24 Process controls.</HEAD>
+<P>(a) In order to meet the requirements of subpart A of this part, processors of juice products shall include in their Hazard Analysis and Critical Control Point (HACCP) plans control measures that will consistently produce, at a minimum, a 5 log (<I>i.e.,</I> 10
+<SU>5</SU>) reduction, for a period at least as long as the shelf life of the product when stored under normal and moderate abuse conditions, in the pertinent microorganism. For the purposes of this regulation, the &#x201C;pertinent microorganism&#x201D; is the most resistant microorganism of public health significance that is likely to occur in the juice. The following juice processors are exempt from this paragraph:</P>
+<P>(1) A juice processor that is subject to the requirements of part 113 or part 114 of this chapter; and</P>
+<P>(2) A juice processor using a single thermal processing step sufficient to achieve shelf-stability of the juice or a thermal concentration process that includes thermal treatment of all ingredients, provided that the processor includes a copy of the thermal process used to achieve shelf-stability or concentration in its written hazard analysis required by &#xA7; 120.7.</P>
+<P>(b) All juice processors shall meet the requirements of paragraph (a) of this section through treatments that are applied directly to the juice, except that citrus juice processors may use treatments to fruit surfaces, provided that the 5-log reduction process begins after culling and cleaning as defined in &#xA7; 120.3(a) and (f) and the reduction is accomplished within a single production facility.</P>
+<P>(c) All juice processors shall meet the requirements of paragraphs (a) and (b) of this section and perform final product packaging within a single production facility operating under current good manufacturing practices. Processors claiming an exemption under paragraph (a)(1) or (a)(2) of this section shall also process and perform final product packaging of all juice subject to the claimed exemption within a single production facility operating under current good manufacturing practices.</P>
+</DIV8>
+
+<DIV8 N="120.25" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-21/section-120.25&quot;,&quot;citation&quot;:&quot;21 CFR 120.25&quot;}">
+<HEAD>&#xA7; 120.25 Process verification for certain processors.</HEAD>
+<P>Each juice processor that relies on treatments that do not come into direct contact with all parts of the juice to achieve the requirements of &#xA7; 120.24 shall analyze the finished product for biotype I <I>Escherichia coli</I> as follows:</P>
+<P>(a) One 20 milliliter (mL) sample (consisting of two 10 mL subsamples) for each 1,000 gallons of juice produced shall be sampled each production day. If less than 1,000 gallons of juice is produced per day, the sample must be taken for each 1,000 gallons produced but not less than once every 5 working days that the facility is producing that juice. Each subsample shall be taken by randomly selecting a package of juice ready for distribution to consumers.</P>
+<P>(b) If the facility is producing more than one type of juice covered by this section, processors shall take subsamples according to paragraph (a) of this section for each of the covered juice products produced.</P>
+<P>(c) Processors shall analyze each subsample for the presence of <I>E. coli</I> by the method entitled &#x201C;Analysis for <I>Escherichia coli</I> in Citrus Juices&#x2014;Modification of AOAC Official Method 992.30&#x201D; or another method that is at least equivalent to this method in terms of accuracy, precision, and sensitivity in detecting <I>E. coli.</I> This method is designed to detect the presence or absence of <I>E. coli</I> in a 20 mL sample of juice (consisting of two 10 mL subsamples). The method is as follows:</P>
+<P>(1) <I>Sample size.</I> Total-20 mL of juice; perform analysis using two 10 mL aliquots.</P>
+<P>(2) <I>Media.</I> Universal Preenrichment Broth (Difco, Detroit, MI), EC Broth (various manufacturers).</P>
+<P>(3) <I>Method.</I> ColiComplete (AOAC Official Method 992.30&#x2014;modified).</P>
+<P>(4) <I>Procedure.</I> Perform the following procedure two times:</P>
+<P>(i) Aseptically inoculate 10 mL of juice into 90 mL of Universal Preenrichment Broth (Difco) and incubate at 35 &#xB0;C for 18 to 24 hours.</P>
+<P>(ii) Next day, transfer 1 mL of preenriched sample into 10 mL of EC Broth, without durham gas vials. After inoculation, aseptically add a ColiComplete SSD disc into each tube.</P>
+<P>(iii) Incubate at 44.5 &#xB0;C for 18 to 24 hours.</P>
+<P>(iv) Examine the tubes under longwave ultra violet light (366 nm). Fluorescent tubes indicate presence of <I>E. coli.</I></P>
+<P>(v) MUG positive and negative controls should be used as reference in interpreting fluorescence reactions. Use an <I>E. coli</I> for positive control and 2 negative controls&#x2014;a MUG negative strain and an uninoculated tube media.</P>
+<P>(d) If either 10 mL subsample is positive for <I>E. coli,</I> the 20 mL sample is recorded as positive and the processor shall:</P>
+<P>(1) Review monitoring records for the control measures to attain the 5-log reduction standard and correct those conditions and practices that are not met. In addition, the processor may choose to test the sample for the presence of pathogens of concern.</P>
+<P>(2) If the review of monitoring records or the additional testing indicates that the 5-log reduction standard was not achieved (<I>e.g.,</I> a sample is found to be positive for the presence of a pathogen or a deviation in the process or its delivery is identified), the processor shall take corrective action as set forth in &#xA7; 120.10.</P>
+<P>(e) If two samples in a series of seven tests are positive for <I>E. coli,</I> the control measures to attain the 5-log reduction standard shall be deemed to be inadequate and the processor shall immediately:</P>
+<P>(1) Until corrective actions are completed, use an alternative process or processes that achieve the 5-log reduction after the juice has been expressed;</P>
+<P>(2) Perform a review of the monitoring records for control measures to attain the 5-log reduction standard. The review shall be sufficiently extensive to determine that there are no trends towards loss of control;</P>
+<P>(i) If the conditions and practices are not being met, correct those that do not conform to the HACCP plan; or</P>
+<P>(ii) If the conditions and practices are being met, the processor shall validate the HACCP plan in relation to the 5-log reduction standard; and</P>
+<P>(3) Take corrective action as set forth in &#xA7; 120.10. Corrective actions shall include ensuring no product enters commerce that is injurious to health as set forth in &#xA7; 120.10(a)(1).</P>
+</DIV8>
+
+</DIV6>
+</DIV5>
