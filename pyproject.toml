@@ -1,0 +1,53 @@
+[project]
+name = "haccp-compliance-rag"
+version = "0.1.0"
+description = "RAG assistant answering HACCP food safety compliance questions, grounded in Codex Alimentarius and FDA/USDA regulations"
+requires-python = ">=3.12"
+dependencies = [
+    # Data handling
+    "pandas>=2.2",
+    "python-dotenv>=1.0",
+    # Embeddings & retrieval
+    "sentence-transformers>=3.0",
+    "qdrant-client>=1.9",
+    "rank-bm25>=0.2.2",
+    # LLM
+    "openai>=1.0",
+    # Document parsing
+    "pypdf>=5.0",
+    "requests>=2.32",
+    "beautifulsoup4>=4.12",
+    # Interface
+    "streamlit>=1.36",
+    # Monitoring
+    "psycopg2-binary>=2.9",
+    # Ingestion pipeline
+    "dlt>=1.0",
+    # Workaround: Streamlit declares starlette<2,>=0.46.0, which admits Starlette
+    # 1.x, where GZipResponder.__init__ gained a required `thread_minimum_size`
+    # kwarg that Streamlit does not pass -> TypeError -> HTTP 500 on any browser
+    # request (curl without gzip is unaffected). Remove once Streamlit supports
+    # Starlette 1.x.
+    "starlette<1.0",
+]
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.0",
+    "tqdm>=4.66",
+]
+
+[tool.uv]
+# Dependency management only: this repo is an application (app/ + src/), not a
+# distributable package, so there is nothing to build or install as a wheel.
+package = false
+
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true 
+
