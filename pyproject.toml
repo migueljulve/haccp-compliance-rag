@@ -9,6 +9,7 @@ dependencies = [
     "python-dotenv>=1.0",
     # Embeddings & retrieval
     "sentence-transformers>=3.0",
+    "torch>=2.0",          # declared explicitly so [tool.uv.sources] can pin the CPU-only build
     "qdrant-client>=1.9",
     "rank-bm25>=0.2.2",
     # LLM
