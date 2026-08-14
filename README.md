@@ -25,34 +25,35 @@ its source regulation](images/streamlit-app.png)
 ## Architecture
 
 ```mermaid
-flowchart LR
-    subgraph ingest["Ingestion (one-time)"]
-        A["Codex PDF / eCFR XML / FSIS PDF"] --> B["parse.py<br/>structure-based chunking"]
-        B --> C["sentence-transformers<br/>embeddings"]
+flowchart TD
+    subgraph one["1 · Ingestion — runs once"]
+        A["Codex PDF<br/>eCFR XML<br/>FSIS PDF"]
+        A --> B["Chunk by section,<br/>keeping citations"]
+        B --> C["Embed locally"]
         C --> D[("Qdrant")]
     end
 
-    subgraph query["Query time"]
-        Q["User question"] --> UI["Streamlit"]
-        UI --> H["hybrid search (RRF)"]
-        D --> H
-        H --> BM["BM25 index"]
-        H --> P["build_prompt<br/>top-5 chunks + citations"]
+    subgraph two["2 · Answering a question"]
+        Q["User question"]
+        Q --> H["Hybrid search<br/>vector + BM25, fused with RRF"]
+        H --> P["Prompt: top 5 chunks,<br/>each with its citation"]
         P --> L["Gemini flash-lite"]
-        L --> EV["evaluate_relevance<br/>LLM-as-judge"]
-        EV --> UI
+        L --> J["Relevance self-check"]
+        J --> ANS["Answer with citations<br/>shown in Streamlit"]
     end
 
-    subgraph monitor["Monitoring"]
-        UI -- "question, answer, tokens,<br/>relevance, feedback" --> PG[("Postgres")]
+    subgraph three["3 · Monitoring"]
+        PG[("Postgres")]
         PG --> GR["Grafana dashboard"]
     end
+
+    D --> H
+    ANS --> PG
 ```
 
-Ingestion runs once (`src/ingest.py`) to populate Qdrant. Every question then goes through hybrid
-retrieval (`src/rag.py::search`), grounded generation (`build_prompt` + `llm`), and a relevance
-self-check (`evaluate_relevance`) before Streamlit shows the answer and logs everything to Postgres
-for the Grafana dashboard.
+Ingestion (`src/ingest.py`) runs once to populate Qdrant. Every question then goes through hybrid
+retrieval, grounded generation, and a relevance self-check (all in `src/rag.py`) before Streamlit
+shows the answer and logs the conversation — plus any 👍/👎 — to Postgres for the dashboard.
 
 ## Stack
 
