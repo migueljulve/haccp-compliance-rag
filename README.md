@@ -24,32 +24,9 @@ its source regulation](images/streamlit-app.png)
 
 ## Architecture
 
-```mermaid
-flowchart TD
-    subgraph one["1 · Ingestion — runs once"]
-        A["Codex PDF<br/>eCFR XML<br/>FSIS PDF"]
-        A --> B["Chunk by section,<br/>keeping citations"]
-        B --> C["Embed locally"]
-        C --> D[("Qdrant")]
-    end
-
-    subgraph two["2 · Answering a question"]
-        Q["User question"]
-        Q --> H["Hybrid search<br/>vector + BM25, fused with RRF"]
-        H --> P["Prompt: top 5 chunks,<br/>each with its citation"]
-        P --> L["Gemini flash-lite"]
-        L --> J["Relevance self-check"]
-        J --> ANS["Answer with citations<br/>shown in Streamlit"]
-    end
-
-    subgraph three["3 · Monitoring"]
-        PG[("Postgres")]
-        PG --> GR["Grafana dashboard"]
-    end
-
-    D --> H
-    ANS --> PG
-```
+![Architecture: regulatory documents are chunked, embedded and stored in Qdrant; a question is
+answered by hybrid search over that index plus Gemini, and the result is logged to Postgres and
+visualized in Grafana](images/architecture.svg)
 
 Ingestion (`src/ingest.py`) runs once to populate Qdrant. Every question then goes through hybrid
 retrieval, grounded generation, and a relevance self-check (all in `src/rag.py`) before Streamlit
