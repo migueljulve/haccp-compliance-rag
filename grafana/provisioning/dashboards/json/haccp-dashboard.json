@@ -13,6 +13,11 @@
       "type": "piechart",
       "gridPos": { "x": 0, "y": 0, "w": 8, "h": 8 },
       "datasource": { "type": "postgres", "uid": "postgres-haccp" },
+      "options": {
+        "pieType": "pie",
+        "reduceOptions": { "values": true, "calcs": [], "fields": "/^count$/" },
+        "legend": { "displayMode": "list", "placement": "bottom", "values": ["value"] }
+      },
       "targets": [
         {
           "datasource": { "type": "postgres", "uid": "postgres-haccp" },
@@ -30,6 +35,11 @@
       "type": "piechart",
       "gridPos": { "x": 8, "y": 0, "w": 8, "h": 8 },
       "datasource": { "type": "postgres", "uid": "postgres-haccp" },
+      "options": {
+        "pieType": "pie",
+        "reduceOptions": { "values": true, "calcs": [], "fields": "/^count$/" },
+        "legend": { "displayMode": "list", "placement": "bottom", "values": ["value"] }
+      },
       "targets": [
         {
           "datasource": { "type": "postgres", "uid": "postgres-haccp" },
@@ -50,8 +60,8 @@
       "targets": [
         {
           "datasource": { "type": "postgres", "uid": "postgres-haccp" },
-          "rawSql": "SELECT date_trunc('day', timestamp) AS time, COUNT(*) AS questions FROM conversations GROUP BY 1 ORDER BY 1",
-          "format": "time_series",
+          "rawSql": "SELECT to_char(date_trunc('day', timestamp), 'YYYY-MM-DD') AS day, COUNT(*) AS questions FROM conversations GROUP BY 1 ORDER BY 1",
+          "format": "table",
           "rawQuery": true,
           "editorMode": "code",
           "refId": "A"

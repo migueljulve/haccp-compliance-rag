@@ -19,6 +19,9 @@ STEP 2`) attached to every fact it uses — so the answer is verifiable, not jus
 retrieves relevant passages with hybrid search (vector + BM25), answers with an LLM constrained to
 that retrieved context, and self-checks the relevance of its own answer before returning it.
 
+![The Streamlit interface answering a HACCP verification question, with each fact traced back to
+its source regulation](images/streamlit-app.png)
+
 ## Architecture
 
 ```mermaid
@@ -119,6 +122,9 @@ See `src/evaluate_llm.py` to reproduce both comparisons.
 Every conversation (question, answer, relevance judgment, token counts, response time) and every
 piece of user feedback (👍/👎) is persisted to Postgres by `src/db.py`. A Grafana dashboard,
 provisioned automatically on startup — no manual configuration — visualizes it:
+
+![Grafana dashboard showing relevance distribution, user feedback, questions per day, response
+time, tokens per question and recent conversations](images/grafana-dashboard.png)
 
 | Panel | Type | What it shows |
 |---|---|---|
