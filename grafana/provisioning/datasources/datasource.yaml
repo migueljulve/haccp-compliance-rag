@@ -1,0 +1,17 @@
+apiVersion: 1
+
+datasources:
+  - name: Postgres
+    uid: postgres-haccp
+    type: postgres
+    access: proxy
+    url: postgres:5432
+    database: rag_monitoring
+    user: raguser
+    secureJsonData:
+      password: ragpassword
+    jsonData:
+      sslmode: disable
+      postgresVersion: 1600
+    isDefault: true
+    editable: false
