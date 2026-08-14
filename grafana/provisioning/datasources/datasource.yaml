@@ -11,6 +11,7 @@ datasources:
     secureJsonData:
       password: ragpassword
     jsonData:
+      database: rag_monitoring
       sslmode: disable
       postgresVersion: 1600
     isDefault: true

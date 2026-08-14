@@ -3,7 +3,7 @@
   "uid": "haccp-monitoring",
   "timezone": "browser",
   "schemaVersion": 39,
-  "version": 1,
+  "version": 2,
   "refresh": "30s",
   "time": { "from": "now-7d", "to": "now" },
   "panels": [
@@ -18,6 +18,8 @@
           "datasource": { "type": "postgres", "uid": "postgres-haccp" },
           "rawSql": "SELECT relevance, COUNT(*) AS count FROM conversations GROUP BY relevance",
           "format": "table",
+          "rawQuery": true,
+          "editorMode": "code",
           "refId": "A"
         }
       ]
@@ -33,6 +35,8 @@
           "datasource": { "type": "postgres", "uid": "postgres-haccp" },
           "rawSql": "SELECT CASE WHEN feedback = 1 THEN 'Helpful' ELSE 'Not helpful' END AS label, COUNT(*) AS count FROM feedback GROUP BY label",
           "format": "table",
+          "rawQuery": true,
+          "editorMode": "code",
           "refId": "A"
         }
       ]
@@ -48,6 +52,8 @@
           "datasource": { "type": "postgres", "uid": "postgres-haccp" },
           "rawSql": "SELECT date_trunc('day', timestamp) AS time, COUNT(*) AS questions FROM conversations GROUP BY 1 ORDER BY 1",
           "format": "time_series",
+          "rawQuery": true,
+          "editorMode": "code",
           "refId": "A"
         }
       ]
@@ -64,6 +70,8 @@
           "datasource": { "type": "postgres", "uid": "postgres-haccp" },
           "rawSql": "SELECT timestamp AS time, response_time FROM conversations ORDER BY timestamp",
           "format": "time_series",
+          "rawQuery": true,
+          "editorMode": "code",
           "refId": "A"
         }
       ]
@@ -79,6 +87,8 @@
           "datasource": { "type": "postgres", "uid": "postgres-haccp" },
           "rawSql": "SELECT timestamp AS time, total_tokens + eval_total_tokens AS total_tokens FROM conversations ORDER BY timestamp",
           "format": "time_series",
+          "rawQuery": true,
+          "editorMode": "code",
           "refId": "A"
         }
       ]
@@ -94,6 +104,8 @@
           "datasource": { "type": "postgres", "uid": "postgres-haccp" },
           "rawSql": "SELECT timestamp, question, relevance, response_time FROM conversations ORDER BY timestamp DESC LIMIT 10",
           "format": "table",
+          "rawQuery": true,
+          "editorMode": "code",
           "refId": "A"
         }
       ]
