@@ -22,6 +22,38 @@ STEP 2`) attached to every fact it uses — so the answer is verifiable, not jus
 retrieves relevant passages with hybrid search (vector + BM25), answers with an LLM constrained to
 that retrieved context, and self-checks the relevance of its own answer before returning it.
 
+## Architecture
+
+```mermaid
+flowchart LR
+    subgraph ingest["Ingestion (one-time)"]
+        A["Codex PDF / eCFR XML / FSIS PDF"] --> B["parse.py<br/>structure-based chunking"]
+        B --> C["sentence-transformers<br/>embeddings"]
+        C --> D[("Qdrant")]
+    end
+
+    subgraph query["Query time"]
+        Q["User question"] --> UI["Streamlit"]
+        UI --> H["hybrid search (RRF)"]
+        D --> H
+        H --> BM["BM25 index"]
+        H --> P["build_prompt<br/>top-5 chunks + citations"]
+        P --> L["Gemini flash-lite"]
+        L --> EV["evaluate_relevance<br/>LLM-as-judge"]
+        EV --> UI
+    end
+
+    subgraph monitor["Monitoring"]
+        UI -- "question, answer, tokens,<br/>relevance, feedback" --> PG[("Postgres")]
+        PG --> GR["Grafana dashboard"]
+    end
+```
+
+Ingestion runs once (`src/ingest.py`) to populate Qdrant. Every question then goes through hybrid
+retrieval (`src/rag.py::search`), grounded generation (`build_prompt` + `llm`), and a relevance
+self-check (`evaluate_relevance`) before Streamlit shows the answer and logs everything to Postgres
+for the Grafana dashboard.
+
 ## Stack
 
 - **Data**: Codex Alimentarius (HACCP General Principles, CXC 1-1969) + FDA (21 CFR 120/123) +
@@ -59,6 +91,24 @@ LLM-as-a-judge to classify each generated answer as RELEVANT / PARTLY_RELEVANT /
 
 `flash-lite` wins on quality, speed, and is the only one of the two with usable free-tier
 quota for this workload. It is the model used in the app. See `src/evaluate_llm.py`.
+
+## Monitoring
+
+Every conversation (question, answer, relevance judgment, token counts, response time) and every
+piece of user feedback (👍/👎) is persisted to Postgres by `src/db.py`. A Grafana dashboard,
+provisioned automatically on startup — no manual configuration — visualizes it:
+
+| Panel | Type | What it shows |
+|---|---|---|
+| Relevance distribution | Pie chart | RELEVANT / PARTLY_RELEVANT / NON_RELEVANT split from the LLM-as-judge check on every answer |
+| Feedback | Pie chart | 👍 Helpful vs 👎 Not helpful, from the app's feedback buttons |
+| Questions per day | Bar chart | Usage over time |
+| Response time | Time series | End-to-end latency per question |
+| Tokens per question | Time series | Prompt + completion + relevance-eval tokens combined |
+| Last 10 conversations | Table | Most recent questions with their relevance and response time |
+
+See `grafana/provisioning/` for the datasource and dashboard definitions (native Grafana
+provisioning — no custom scripting).
 
 ## Running the project
 
