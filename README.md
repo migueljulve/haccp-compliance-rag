@@ -17,7 +17,7 @@ principles and FDA/USDA regulatory guidance.
   USDA FSIS guidance
 - **Embeddings**: sentence-transformers (local)
 - **Vector store**: Qdrant
-- **LLM**: OpenAI API
+- **LLM**: Gemini API (`gemini-3.5-flash-lite`, OpenAI-compatible endpoint)
 - **Interface**: Streamlit
 - **Monitoring**: Postgres + Grafana
 - **Containerization**: docker-compose
@@ -35,6 +35,19 @@ Three retrieval methods were compared on 424 LLM-generated ground truth question
 
 Hybrid search (Reciprocal Rank Fusion over vector + BM25 top-20) wins on both
 metrics and is the method used in the app. See `src/evaluate_retrieval.py`.
+
+## LLM Evaluation
+
+Two Gemini models were compared on a fixed sample of 30 ground truth questions, using
+LLM-as-a-judge to classify each generated answer as RELEVANT / PARTLY_RELEVANT / NON_RELEVANT:
+
+| Model | Relevant | Avg response time |
+|---|---|---|
+| **gemini-3.5-flash-lite** | **29/30** | **5.93s** |
+| gemini-3.5-flash | did not complete — exhausted free-tier quota at question 12/30 | — |
+
+`flash-lite` wins on quality, speed, and is the only one of the two with usable free-tier
+quota for this workload. It is the model used in the app. See `src/evaluate_llm.py`.
 
 ## Running the project
 

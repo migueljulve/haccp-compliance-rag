@@ -10,6 +10,8 @@ from qdrant_client import QdrantClient
 from rank_bm25 import BM25Okapi
 from sentence_transformers import SentenceTransformer
 
+load_dotenv()
+
 COLLECTION = "haccp"
 EMBEDDING_MODEL = "multi-qa-mpnet-base-dot-v1"
 LLM_MODEL = "gemini-3.5-flash-lite"
@@ -17,7 +19,6 @@ BASE_URL = "https://generativelanguage.googleapis.com/v1beta/openai/"
 QDRANT_HOST = os.getenv("QDRANT_HOST", "localhost")
 QDRANT_PORT = int(os.getenv("QDRANT_PORT", "6333"))
 
-load_dotenv()
 qdrant = QdrantClient(host=QDRANT_HOST, port=QDRANT_PORT)
 embedding_model = SentenceTransformer(EMBEDDING_MODEL)
 llm_client = OpenAI(api_key=os.getenv("GEMINI_API_KEY"), base_url=BASE_URL)
