@@ -22,6 +22,20 @@ principles and FDA/USDA regulatory guidance.
 - **Monitoring**: Postgres + Grafana
 - **Containerization**: docker-compose
 
+## Retrieval Evaluation
+
+Three retrieval methods were compared on 424 LLM-generated ground truth questions
+(hit-rate@5 and MRR@5):
+
+| Method | Hit Rate@5 | MRR@5 |
+|---|---|---|
+| Vector search | 0.764 | 0.585 |
+| BM25 | 0.818 | 0.657 |
+| **Hybrid (RRF)** | **0.844** | **0.680** |
+
+Hybrid search (Reciprocal Rank Fusion over vector + BM25 top-20) wins on both
+metrics and is the method used in the app. See `src/evaluate_retrieval.py`.
+
 ## Running the project
 
 *(To be completed in the reproducibility phase.)*
