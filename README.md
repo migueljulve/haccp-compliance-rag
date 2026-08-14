@@ -4,9 +4,6 @@ Final project for the [LLM Zoomcamp](https://github.com/DataTalksClub/llm-zoomca
 that answers HACCP / food safety compliance questions, grounded in the Codex Alimentarius HACCP
 principles and FDA/USDA regulatory guidance.
 
-> Status: in progress. See `CLAUDE.md` for the working plan and technical decisions (local notes,
-> not part of this repo's history).
-
 ## Problem
 
 Food safety compliance (HACCP — Hazard Analysis and Critical Control Points) is governed by
@@ -81,16 +78,41 @@ metrics and is the method used in the app. See `src/evaluate_retrieval.py`.
 
 ## LLM Evaluation
 
-Two Gemini models were compared on a fixed sample of 30 ground truth questions, using
-LLM-as-a-judge to classify each generated answer as RELEVANT / PARTLY_RELEVANT / NON_RELEVANT:
+Both the **prompt** and the **model** were chosen by evaluation, on a fixed sample of 30 ground
+truth questions (same questions in every run, fixed random seed).
 
-| Model | Relevant | Avg response time |
+### Prompt: cited vs plain
+
+Two prompt variants were compared, both on `gemini-3.5-flash-lite`:
+
+- **A (cited)** — instructs the model to cite the source of each fact and to say explicitly when
+  the retrieved context does not answer the question
+- **B (plain)** — same grounding constraint, without the citation or abstention instruction
+
+| | A (cited) | B (plain) |
 |---|---|---|
-| **gemini-3.5-flash-lite** | **29/30** | **5.93s** |
-| gemini-3.5-flash | did not complete — exhausted free-tier quota at question 12/30 | — |
+| RELEVANT (LLM-as-judge) | 29 / 30 | 29 / 30 |
+| **Answers citing a source** | **28 / 30 (93%)** | 7 / 30 (23%) |
+| Avg response time | 5.36s | 7.45s |
+| Avg tokens per question | 1969 | 1860 |
 
-`flash-lite` wins on quality, speed, and is the only one of the two with usable free-tier
-quota for this workload. It is the model used in the app. See `src/evaluate_llm.py`.
+**Relevance alone could not separate the two variants** — identical 29/30. That is a property of
+the metric, not a tie in quality: the LLM judge is only asked whether the answer addresses the
+question, so it is blind to whether the answer is traceable to a regulation. Adding a second
+metric — does the answer actually cite a source? — separates them decisively, 93% vs 23%.
+
+For a compliance assistant that distinction is the whole point: an uncited answer may be correct,
+but the user cannot verify it against the regulation. **Variant A is the prompt used in the app.**
+
+### Model: flash-lite vs flash
+
+`gemini-3.5-flash` was evaluated the same way and **could not complete the run** — it exhausted its
+free-tier quota partway through the sample even with retry-and-backoff on rate limit errors. Its
+answer quality therefore could not be scored, but the result is decisive for a project running on
+the free tier: the model is not usable for this workload regardless of how good its answers are.
+`gemini-3.5-flash-lite` completed every run, at ~5-7s per question.
+
+See `src/evaluate_llm.py` to reproduce both comparisons.
 
 ## Monitoring
 

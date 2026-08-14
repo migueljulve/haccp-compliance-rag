@@ -47,11 +47,26 @@ def search(query, k=5, rrf_k=60):
     return [chunks[i] for i in top_ids]
 
 
-prompt_template = """
+# Prompt variant A (default): demands an explicit citation for every fact, and an
+# explicit "not in the context" when the retrieved passages don't answer the question.
+prompt_template_cited = """
 You are a HACCP food safety compliance assistant. Answer the QUESTION based on the CONTEXT below,
 which comes from Codex Alimentarius and FDA/USDA regulatory sources. Use only the facts from the
 CONTEXT. Cite the source of each fact using its citation (e.g. "21 CFR 123 § 123.6").
 If the CONTEXT does not contain the answer, say so explicitly instead of guessing.
+
+QUESTION: {question}
+
+CONTEXT:
+{context}
+""".strip()
+
+# Prompt variant B: same grounding constraint, no citation or abstention instruction.
+# Used as the baseline in the prompt comparison (see src/evaluate_llm.py).
+prompt_template_plain = """
+You are a HACCP food safety compliance assistant. Answer the QUESTION based on the CONTEXT below,
+which comes from Codex Alimentarius and FDA/USDA regulatory sources. Use only the facts from the
+CONTEXT.
 
 QUESTION: {question}
 
@@ -65,7 +80,7 @@ Source: {citation}
 """.strip()
 
 
-def build_prompt(query, search_results):
+def build_prompt(query, search_results, prompt_template=prompt_template_cited):
     context = "\n\n".join(entry_template.format(**doc) for doc in search_results)
     return prompt_template.format(question=query, context=context)
 
@@ -110,11 +125,11 @@ def evaluate_relevance(question, answer):
         return {"Relevance": "UNKNOWN", "Explanation": "Failed to parse evaluation"}, tokens
 
 
-def rag(query, model=LLM_MODEL):
+def rag(query, model=LLM_MODEL, prompt_template=prompt_template_cited):
     t0 = time()
 
     search_results = search(query)
-    prompt = build_prompt(query, search_results)
+    prompt = build_prompt(query, search_results, prompt_template)
     answer, token_stats = llm(prompt, model=model)
     relevance, rel_token_stats = evaluate_relevance(query, answer)
 
