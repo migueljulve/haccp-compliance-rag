@@ -1,9 +1,8 @@
 """Parse the HACCP source corpus into a common list-of-chunks format."""
 
-import xml.etree.ElementTree as ET
-
 import re
 import xml.etree.ElementTree as ET
+
 from pypdf import PdfReader
 
 

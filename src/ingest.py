@@ -15,7 +15,7 @@ QDRANT_HOST = os.getenv("QDRANT_HOST", "localhost")
 QDRANT_PORT = int(os.getenv("QDRANT_PORT", "6333"))
 
 
-# Upload chunck and generate embeddings.
+# Upload chunks and generate embeddings.
 def main():
     chunks = parse_all()
     print(f"Parsed {len(chunks)} chunks")
