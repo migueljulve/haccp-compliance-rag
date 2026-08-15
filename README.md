@@ -163,10 +163,16 @@ uv run python -m src.evaluate_llm         # LLM: gemini-3.5-flash-lite vs gemini
 ```
 
 **Fully containerized alternative**: `docker-compose.yml` also defines an `app` service that builds
-the Streamlit app into a Docker image (`docker compose up -d --build`) instead of running it with
-`uv` on the host. This path has not been exercised in this project's development so far — the
-steps above (running `uv run streamlit run app/main.py` directly against the dockerized
-Qdrant/Postgres/Grafana) are the verified way to run it.
+the Streamlit app into a Docker image, so the whole stack — app included — can be started with a
+single command instead of running Streamlit with `uv` on the host:
+```bash
+docker compose up -d --build
+```
+This has been verified to build and serve the app correctly (`http://localhost:8501`). You may see
+noisy `ModuleNotFoundError: No module named 'torchvision'` lines in `docker logs` — that's
+Streamlit's file watcher probing optional vision-model submodules of `transformers` that this
+project never uses (no `torchvision` is installed on purpose, since only text embeddings are
+needed); it does not affect the app.
 
 ## Structure
 
