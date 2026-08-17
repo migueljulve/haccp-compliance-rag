@@ -87,11 +87,22 @@ but the user cannot verify it against the regulation. **Variant A is the prompt 
 
 ### Model: flash-lite vs flash
 
-`gemini-3.5-flash` was evaluated the same way and **could not complete the run** — it exhausted its
-free-tier quota partway through the sample even with retry-and-backoff on rate limit errors. Its
-answer quality therefore could not be scored, but the result is decisive for a project running on
-the free tier: the model is not usable for this workload regardless of how good its answers are.
-`gemini-3.5-flash-lite` completed every run, at ~5-7s per question.
+`gemini-3.5-flash` was evaluated the same way, on the same 30 questions and the cited prompt. Even
+with retry-and-backoff on rate limit errors, it only completed 26/30 before exhausting its
+free-tier quota.
+
+| | flash-lite | flash |
+|---|---|---|
+| RELEVANT (LLM-as-judge) | 29 / 30 | 25 / 26 completed |
+| Answers citing a source | 93% | 92% |
+| Avg response time | 5.36s | 20.23s |
+| Avg tokens per question | 1969 | 2826 |
+| Completed on free tier | 30 / 30 | 26 / 30 |
+
+Answer quality is comparable, but `flash` is ~4x slower, uses ~45% more tokens, and still could not
+finish a 30-question sample without hitting the free-tier rate limit. For a project running on the
+free tier, that makes `gemini-3.5-flash-lite` the only reliable choice regardless of the marginal
+quality difference.
 
 See `src/evaluate_llm.py` to reproduce both comparisons.
 

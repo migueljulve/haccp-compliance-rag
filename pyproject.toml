@@ -22,8 +22,6 @@ dependencies = [
     "streamlit>=1.36",
     # Monitoring
     "psycopg2-binary>=2.9",
-    # Ingestion pipeline
-    "dlt>=1.0",
     # Workaround: Streamlit declares starlette<2,>=0.46.0, which admits Starlette
     # 1.x, where GZipResponder.__init__ gained a required `thread_minimum_size`
     # kwarg that Streamlit does not pass -> TypeError -> HTTP 500 on any browser
